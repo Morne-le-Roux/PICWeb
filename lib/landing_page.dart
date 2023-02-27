@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'navbar.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -6,6 +7,7 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           //Navbar
@@ -29,20 +31,6 @@ class LandingPage extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class Navbar extends StatelessWidget {
-  const Navbar({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 50,
-      child: Row(children: const [Text("Print&Image Centre")]),
     );
   }
 }
