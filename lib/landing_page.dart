@@ -15,7 +15,10 @@ class LandingPage extends StatelessWidget {
           //Advert Carousel Container
           Expanded(
             child: Container(
-              color: Colors.white,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/Ad_1.jpg"), fit: BoxFit.cover),
+              ),
             ),
           ),
 
