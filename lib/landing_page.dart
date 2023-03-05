@@ -13,11 +13,13 @@ class LandingPage extends StatelessWidget {
           //Navbar
           const Navbar(),
           //Advert Carousel Container
-          Expanded(
+
+          AspectRatio(
+            aspectRatio: 16 / 4.5,
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/Ad_1.jpg"), fit: BoxFit.cover),
+                    image: AssetImage("assets/Ad_1.jpg"), fit: BoxFit.fill),
               ),
             ),
           ),
