@@ -9,7 +9,7 @@ class Navbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 8), // Top spacing
+      padding: const EdgeInsets.symmetric(vertical: 8), // Top spacing
       child: SizedBox(
         height: 50, // Navbar height
         child:
@@ -24,6 +24,7 @@ class Navbar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 20),
             child: Row(
+              //
               //PLACEHOLDER BUTTONS
               children: const [
                 Padding(
