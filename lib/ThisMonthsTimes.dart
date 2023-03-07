@@ -34,20 +34,15 @@ Map<String, String> _closingTimes = {
   "day31": "08:00 - 17:00",
 };
 
-const _dayList = [];
-
 class ThisMonthsTimes extends StatelessWidget {
   const ThisMonthsTimes({super.key});
 
   @override
   Widget build(BuildContext context) {
-    for (var i in _closingTimes) {
-      _dayList.add(i);
-    }
-
     return Padding(
       padding: const EdgeInsets.all(8.0), //padding around widget
       child: Container(
+        width: 300, //width of the widget
         padding: const EdgeInsets.all(8), //padding on the inside of the widget
         decoration: const BoxDecoration(
             color: Colors.white, //color of the widget
@@ -58,18 +53,20 @@ class ThisMonthsTimes extends StatelessWidget {
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [],
+              children: _closingTimes.entries.map((e) {
+                return Text(e.key);
+              }).toList(),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
-                Text(""),
-                Text("08:00"),
-                Text("08:00"),
-                Text("08:00"),
-                Text("08:00"),
-                Text("08:00"),
-              ],
+
+              //Takes the above times and iterates through the map to make up all the dates and times
+              //Will implement something different as soon as the CMS is developed
+              children: _closingTimes.entries.map(
+                (e) {
+                  return Text(e.value);
+                },
+              ).toList(),
             )
           ],
         ),
