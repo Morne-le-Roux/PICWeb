@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:picweb/carousel_banner.dart';
 import 'package:picweb/this_months_times.dart';
 import 'navbar.dart';
 
@@ -16,23 +17,7 @@ class LandingPage extends StatelessWidget {
             const Navbar(),
             //Advert Carousel Container
 
-            AspectRatio(
-              aspectRatio: 16 / 4.5,
-              child: Container(
-                decoration: const BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                        color: Colors.black26,
-                        offset: Offset(4, 4),
-                        blurRadius: 4,
-                        spreadRadius: 0.05),
-                  ],
-                  image: DecorationImage(
-                      image: AssetImage("assets/Ad_1.jpg"),
-                      fit: BoxFit.scaleDown),
-                ),
-              ),
-            ),
+            const BannerCarousel(),
 
 //Body under banner
             Row(
