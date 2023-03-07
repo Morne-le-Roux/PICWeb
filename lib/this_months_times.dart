@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -46,10 +47,13 @@ class ThisMonthsTimes extends StatelessWidget {
     //gets todays date and formats it to just the current month
     String month = DateFormat.MMMM('en').format(DateTime.now());
 
+    //constants
+    TextStyle kTextStyle = GoogleFonts.oswald();
+
     return Padding(
       padding: const EdgeInsets.all(8.0), //padding around widget
       child: Container(
-        width: 200, //width of the widget
+        width: 150, //width of the widget
         padding: const EdgeInsets.all(8), //padding on the inside of the widget
         decoration: const BoxDecoration(
             color: Colors.white, //color of the widget
@@ -64,7 +68,10 @@ class ThisMonthsTimes extends StatelessWidget {
                 //
                 //This displays the current month's name and the date
                 //
-                return Text("$month ${e.key}");
+                return Text(
+                  "$month ${e.key}",
+                  style: kTextStyle,
+                );
                 //
                 //
               }).toList(),
@@ -79,7 +86,10 @@ class ThisMonthsTimes extends StatelessWidget {
                   //
                   //These are the times from the map
                   //
-                  return Text(e.value);
+                  return Text(
+                    e.value,
+                    style: kTextStyle,
+                  );
                   //
                   //
                 },
