@@ -10,7 +10,6 @@ class BannerCarousel extends StatefulWidget {
 
 class _BannerCarouselState extends State<BannerCarousel> {
   @override
-  @override
   Widget build(BuildContext context) {
     List<Widget> advertisements =
         []; //List of the advertisements for the top banner. Currently only supports 1-4. Will be changed after CMS is developed.
@@ -20,7 +19,13 @@ class _BannerCarouselState extends State<BannerCarousel> {
     ));
 
     return CarouselSlider(
-        options: CarouselOptions(height: 550, viewportFraction: 1),
+        options: CarouselOptions(
+          aspectRatio: 16 /
+              4.5, //keeps the carousel the right size. Cant believe it took me 2 days to figure this out...
+          viewportFraction: 1,
+          autoPlay: true,
+          autoPlayInterval: const Duration(seconds: 3),
+        ),
         items: advertisements);
   }
 }
