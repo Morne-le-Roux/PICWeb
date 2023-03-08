@@ -9,7 +9,7 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: const Color.fromARGB(255, 247, 246, 243),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -22,8 +22,16 @@ class LandingPage extends StatelessWidget {
 //Body under banner
             Row(
               children: [
-                Column(
-                  children: const [ThisMonthsTimes()],
+                const ThisMonthsTimes(),
+
+                //Spacer Line
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Container(
+                    width: 1,
+                    height: 500,
+                    color: Colors.black26,
+                  ),
                 )
               ],
             )
