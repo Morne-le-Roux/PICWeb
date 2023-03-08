@@ -59,42 +59,51 @@ class ThisMonthsTimes extends StatelessWidget {
             color: Colors.white, //color of the widget
             borderRadius:
                 BorderRadius.all(Radius.circular(20))), //border radius
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: _closingTimes.entries.map((e) {
-                //
-                //This displays the current month's name and the date
-                //
-                return Text(
-                  "$month ${e.key}",
-                  style: kTextStyle,
-                );
-                //
-                //
-              }).toList(),
+            Text(
+              "Our business hours for this month.",
+              textAlign: TextAlign.center,
+              style: GoogleFonts.anton(),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: _closingTimes.entries.map((e) {
+                    //
+                    //This displays the current month's name and the date
+                    //
+                    return Text(
+                      "$month ${e.key}",
+                      style: kTextStyle,
+                    );
+                    //
+                    //
+                  }).toList(),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
 
-              //Takes the above times and iterates through the map to make up all the dates and times
-              //Will implement something different as soon as the CMS is developed
-              children: _closingTimes.entries.map(
-                (e) {
-                  //
-                  //These are the times from the map
-                  //
-                  return Text(
-                    e.value,
-                    style: kTextStyle,
-                  );
-                  //
-                  //
-                },
-              ).toList(),
-            )
+                  //Takes the above times and iterates through the map to make up all the dates and times
+                  //Will implement something different as soon as the CMS is developed
+                  children: _closingTimes.entries.map(
+                    (e) {
+                      //
+                      //These are the times from the map
+                      //
+                      return Text(
+                        e.value,
+                        style: kTextStyle,
+                      );
+                      //
+                      //
+                    },
+                  ).toList(),
+                )
+              ],
+            ),
           ],
         ),
       ),
