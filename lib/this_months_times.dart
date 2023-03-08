@@ -20,7 +20,7 @@ class ThisMonthsTimes extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0), //padding around widget
       child: Container(
-        width: 150, //width of the widget
+        width: 200, //width of the widget
         padding: const EdgeInsets.all(8), //padding on the inside of the widget
 
         child: Column(
@@ -29,7 +29,7 @@ class ThisMonthsTimes extends StatelessWidget {
             Text(
               "Our business hours for this month.",
               textAlign: TextAlign.center,
-              style: GoogleFonts.anton(),
+              style: mainTextStyle.copyWith(fontSize: 25),
             ),
 
             //Spacer

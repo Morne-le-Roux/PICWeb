@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const Map<String, String> businessHours = {
   "1": "08:00 - 17:00",
@@ -41,3 +42,5 @@ const List<BoxShadow> boxShadow = [
       spreadRadius: 0.1,
       color: Colors.black45)
 ];
+
+final TextStyle mainTextStyle = GoogleFonts.londrinaSolid();

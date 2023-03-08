@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:picweb/constants.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({
@@ -17,8 +17,8 @@ class Navbar extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: Text(
-              "Print&Image Centre",
-              style: GoogleFonts.anton(fontSize: 30),
+              "PRINT&IMAGE CENTRE",
+              style: mainTextStyle.copyWith(fontSize: 40),
             ),
           ),
           Padding(
