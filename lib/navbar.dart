@@ -26,18 +26,23 @@ class Navbar extends StatelessWidget {
             child: Row(
               //
               //PLACEHOLDER BUTTONS
-              children: const [
+              children: [
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Text("Home"),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Text(
+                    "Home",
+                    style: secondaryTextStyle.copyWith(fontSize: 20),
+                  ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Text("Shop"),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Text("Shop",
+                      style: secondaryTextStyle.copyWith(fontSize: 20)),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: Text("Info"),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Text("Info",
+                      style: secondaryTextStyle.copyWith(fontSize: 20)),
                 ),
               ],
             ),
