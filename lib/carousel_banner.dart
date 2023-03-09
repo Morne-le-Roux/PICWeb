@@ -33,10 +33,10 @@ class _BannerCarouselState extends State<BannerCarousel> {
     return CarouselSlider(
         options: CarouselOptions(
           aspectRatio: 16 /
-              4.5, //keeps the carousel the right size. Cant believe it took me 2 days to figure this out...
+              4, //keeps the carousel the right size. Cant believe it took me 2 days to figure this out...
           viewportFraction: 1,
           autoPlay: true,
-          autoPlayInterval: const Duration(seconds: 5),
+          autoPlayInterval: const Duration(seconds: 8),
         ),
         items: advertisements);
   }
