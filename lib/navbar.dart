@@ -11,7 +11,7 @@ class Navbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8), // Top spacing
       child: SizedBox(
-        height: 50, // Navbar height
+        height: 60, // Navbar height
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Padding(

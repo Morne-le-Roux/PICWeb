@@ -29,10 +29,14 @@ class LandingPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Container(
                     width: 1,
-                    height: 500,
+                    height: 200,
                     color: Colors.black26,
                   ),
-                )
+                ),
+
+                //Specials
+
+                // const Specials(),
               ],
             )
           ],

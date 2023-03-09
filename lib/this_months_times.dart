@@ -23,7 +23,7 @@ class ThisMonthsTimes extends StatelessWidget {
           children: [
             //heading
             Text(
-              "Our business hours for this month.",
+              "Our business hours for the next week.", //heading
               textAlign: TextAlign.center,
               style: secondaryTextStyle.copyWith(fontSize: 25),
             ),
@@ -43,7 +43,7 @@ class ThisMonthsTimes extends StatelessWidget {
                     //
                     return Text(
                       "$month ${e.key}",
-                      style: kTextStyle,
+                      style: plainTextStyle,
                     );
                     //
                     //
@@ -61,7 +61,7 @@ class ThisMonthsTimes extends StatelessWidget {
                       //
                       return Text(
                         e.value,
-                        style: kTextStyle,
+                        style: plainTextStyle,
                       );
                       //
                       //
