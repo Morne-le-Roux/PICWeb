@@ -15,8 +15,20 @@ class _BannerCarouselState extends State<BannerCarousel> {
         []; //List of the advertisements for the top banner. Currently only supports 1-4. Will be changed after CMS is developed.
     advertisements.add(Container(
       decoration: const BoxDecoration(
-          image: DecorationImage(image: AssetImage("Ad_1.jpg"))),
+        image: DecorationImage(
+          image: AssetImage("Ad_1.png"),
+        ),
+      ),
     ));
+    advertisements.add(
+      Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("Ad_2.png"),
+          ),
+        ),
+      ),
+    );
 
     return CarouselSlider(
         options: CarouselOptions(
