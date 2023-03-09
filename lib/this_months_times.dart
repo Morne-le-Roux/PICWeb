@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:picweb/constants.dart';
@@ -14,9 +13,6 @@ class ThisMonthsTimes extends StatelessWidget {
     //gets todays date and formats it to just the current month
     String month = DateFormat.MMMM('en').format(DateTime.now());
 
-    //constants
-    TextStyle kTextStyle = GoogleFonts.oswald();
-
     return Padding(
       padding: const EdgeInsets.all(8.0), //padding around widget
       child: Container(
@@ -29,7 +25,7 @@ class ThisMonthsTimes extends StatelessWidget {
             Text(
               "Our business hours for this month.",
               textAlign: TextAlign.center,
-              style: mainTextStyle.copyWith(fontSize: 25),
+              style: secondaryTextStyle.copyWith(fontSize: 25),
             ),
 
             //Spacer

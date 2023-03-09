@@ -43,4 +43,8 @@ const List<BoxShadow> boxShadow = [
       color: Colors.black45)
 ];
 
-final TextStyle mainTextStyle = GoogleFonts.londrinaSolid();
+final TextStyle mainTextStyle = GoogleFonts.anton();
+
+final TextStyle secondaryTextStyle = GoogleFonts.londrinaSolid();
+
+final TextStyle kTextStyle = GoogleFonts.oswald();
