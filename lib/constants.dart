@@ -53,4 +53,4 @@ final TextStyle secondaryTextStyle = GoogleFonts.anton(color: textColor);
 
 final TextStyle plainTextStyle = GoogleFonts.oswald(color: textColor);
 
-const Color textColor = Color.fromARGB(255, 234, 237, 247);
+const Color textColor = Colors.black87;

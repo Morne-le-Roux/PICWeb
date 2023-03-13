@@ -18,7 +18,11 @@ class ThisMonthsTimes extends StatelessWidget {
       child: Container(
         decoration: const BoxDecoration(
           //DECORATION
-          color: Colors.black26,
+          //BACKGROUND COLOR
+          gradient: LinearGradient(
+              colors: [Colors.amber, Colors.amberAccent],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter),
           borderRadius: BorderRadius.all(
             Radius.circular(20),
           ),

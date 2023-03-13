@@ -1,0 +1,21 @@
+import 'package:flutter/material.dart';
+
+class LatestInfo extends StatelessWidget {
+  const LatestInfo({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+          width: 300,
+          height: 290,
+          decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+              gradient: LinearGradient(
+                  colors: [Colors.amber, Colors.amberAccent],
+                  begin: Alignment.bottomCenter,
+                  end: Alignment.topCenter))),
+    );
+  }
+}

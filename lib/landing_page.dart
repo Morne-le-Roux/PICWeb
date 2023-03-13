@@ -1,8 +1,9 @@
 import "package:flutter/material.dart";
 import 'package:picweb/carousel_banner.dart';
+import 'package:picweb/latest_info.dart';
+import 'package:picweb/quick_shop.dart';
 import 'package:picweb/this_months_times.dart';
 import 'navbar.dart';
-import 'shop_now_button.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -21,15 +22,15 @@ class LandingPage extends StatelessWidget {
             const BannerCarousel(),
 
 //Body under banner
-            Row(
-              children: const [
-                ThisMonthsTimes(),
-
-                ShopNowButton()
-
-                //Specials
-
-                // const Specials(),
+            Column(
+              children: [
+                Row(
+                  children: const [
+                    Expanded(flex: 1, child: ThisMonthsTimes()),
+                    Expanded(flex: 2, child: LatestInfo()),
+                    Expanded(flex: 3, child: QuickShop()) //QUICK SHOP
+                  ],
+                ),
               ],
             )
           ],
