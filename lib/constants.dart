@@ -49,8 +49,7 @@ const List<BoxShadow> boxShadow = [
 
 final TextStyle mainTextStyle = GoogleFonts.anton(color: textColor);
 
-final TextStyle secondaryTextStyle =
-    GoogleFonts.londrinaSolid(color: textColor);
+final TextStyle secondaryTextStyle = GoogleFonts.anton(color: textColor);
 
 final TextStyle plainTextStyle = GoogleFonts.oswald(color: textColor);
 
