@@ -27,7 +27,7 @@ class ThisMonthsTimes extends StatelessWidget {
             Radius.circular(20),
           ),
         ),
-        width: 200, //width of the widget
+
         padding: const EdgeInsets.all(12), //padding on the inside of the widget
 
         child: Column(
