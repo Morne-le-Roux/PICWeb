@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import 'package:picweb/carousel_banner.dart';
 import 'package:picweb/this_months_times.dart';
 import 'navbar.dart';
+import 'shop_now_button.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -21,18 +22,10 @@ class LandingPage extends StatelessWidget {
 
 //Body under banner
             Row(
-              children: [
-                const ThisMonthsTimes(),
+              children: const [
+                ThisMonthsTimes(),
 
-                //Spacer Line
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Container(
-                    width: 1,
-                    height: 200,
-                    color: Colors.black26,
-                  ),
-                ),
+                ShopNowButton()
 
                 //Specials
 

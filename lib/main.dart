@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Container(
           decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage("Background.png"))),
+            image:
+                DecorationImage(image: AssetImage("BG.jpg"), fit: BoxFit.fill),
+          ),
           child: const LandingPage()),
     );
   }

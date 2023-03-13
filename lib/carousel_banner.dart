@@ -20,20 +20,11 @@ class _BannerCarouselState extends State<BannerCarousel> {
         ),
       ),
     ));
-    advertisements.add(
-      Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("Ad_2.png"),
-          ),
-        ),
-      ),
-    );
 
     return CarouselSlider(
         options: CarouselOptions(
           aspectRatio: 16 /
-              4, //keeps the carousel the right size. Cant believe it took me 2 days to figure this out...
+              4.5, //keeps the carousel the right size. Cant believe it took me 2 days to figure this out...
           viewportFraction: 1,
           autoPlay: true,
           autoPlayInterval: const Duration(seconds: 8),

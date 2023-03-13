@@ -54,4 +54,4 @@ final TextStyle secondaryTextStyle =
 
 final TextStyle plainTextStyle = GoogleFonts.oswald(color: textColor);
 
-const Color textColor = Color.fromARGB(255, 255, 255, 246);
+const Color textColor = Color.fromARGB(255, 234, 237, 247);

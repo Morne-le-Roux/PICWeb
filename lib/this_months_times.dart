@@ -16,8 +16,15 @@ class ThisMonthsTimes extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0), //padding around widget
       child: Container(
+        decoration: const BoxDecoration(
+          //DECORATION
+          color: Colors.black26,
+          borderRadius: BorderRadius.all(
+            Radius.circular(20),
+          ),
+        ),
         width: 200, //width of the widget
-        padding: const EdgeInsets.all(8), //padding on the inside of the widget
+        padding: const EdgeInsets.all(12), //padding on the inside of the widget
 
         child: Column(
           children: [
