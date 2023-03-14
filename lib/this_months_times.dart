@@ -28,7 +28,7 @@ class ThisMonthsTimes extends StatelessWidget {
           ),
         ),
 
-        padding: const EdgeInsets.all(12), //padding on the inside of the widget
+        padding: const EdgeInsets.all(8), //padding on the inside of the widget
 
         child: Column(
           children: [
@@ -36,50 +36,56 @@ class ThisMonthsTimes extends StatelessWidget {
             Text(
               "Our business hours for the next week.", //heading
               textAlign: TextAlign.center,
-              style: secondaryTextStyle.copyWith(fontSize: 25),
+              style: secondaryTextStyle.copyWith(fontSize: 20),
             ),
 
             //Spacer
             const SizedBox(
               height: 10,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: businessHours.entries.map((e) {
-                    //
-                    //This displays the current month's name and the date
-                    //
-                    return Text(
-                      "$month ${e.key}",
-                      style: plainTextStyle,
-                    );
-                    //
-                    //
-                  }).toList(),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-
-                  //Takes the above times and iterates through the map to make up all the dates and times
-                  //Will implement something different as soon as the CMS is developed
-                  children: businessHours.entries.map(
-                    (e) {
+            Container(
+              padding: const EdgeInsets.all(10),
+              decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: Colors.white),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: businessHours.entries.map((e) {
                       //
-                      //These are the times from the map
+                      //This displays the current month's name and the date
                       //
                       return Text(
-                        e.value,
+                        "$month ${e.key}",
                         style: plainTextStyle,
                       );
                       //
                       //
-                    },
-                  ).toList(),
-                )
-              ],
+                    }).toList(),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+
+                    //Takes the above times and iterates through the map to make up all the dates and times
+                    //Will implement something different as soon as the CMS is developed
+                    children: businessHours.entries.map(
+                      (e) {
+                        //
+                        //These are the times from the map
+                        //
+                        return Text(
+                          e.value,
+                          style: plainTextStyle,
+                        );
+                        //
+                        //
+                      },
+                    ).toList(),
+                  )
+                ],
+              ),
             ),
           ],
         ),

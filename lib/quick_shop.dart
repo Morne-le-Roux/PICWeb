@@ -14,8 +14,8 @@ class QuickShop extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(20)),
               gradient: LinearGradient(
                   colors: [Colors.amber, Colors.amberAccent],
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter))),
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter))),
     );
   }
 }
